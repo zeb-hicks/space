@@ -43,8 +43,10 @@ fn main() {
   }
 }
 
-
-// #[test]
-// fn should_fail() {
-//   unimplemented!();
-// }
+#[cfg(test)]
+mod tests {
+  #[test]
+  fn test_gl_context() {
+    let _sdl_context = sdl2::init().unwrap();
+  }
+}
